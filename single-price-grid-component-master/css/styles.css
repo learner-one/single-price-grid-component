@@ -1,0 +1,111 @@
+
+body {
+  background-color: lightgray;
+  background-color: hsl(204, 43%, 93%);
+  color: grayishblue;
+  color: hsl(218, 22%, 67%);  
+  font: Karla;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  display: grid;
+  grid:
+    " . . . " .7fr
+    " . community . " 31%
+    " . subscription . " 29%
+    " . benefits . " 29%
+    " . footer . " 1fr
+    /30px 315px 30px;
+}
+body > div {
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 35px;
+}
+#community {
+  grid-area: community;
+  background-color: white;
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: 2px 3px 15px #888888;
+}
+#gain {
+  opacity: .8;
+}
+#subscription {
+  grid-area:  subscription;
+  background-color: cyan;
+  background-color: hsl(179, 62%, 43%); 
+  color: white;
+  border-radius: 0px 0px 0px 0px;
+  box-shadow: 2px 3px 15px #888888;
+}
+#per {
+  opacity: .5;
+}
+#full {
+  opacity: .8;
+}
+#benefits {
+  grid-area: benefits;
+  background-color: cyan;
+  background-color: hsl(179, 62%, 43%, 0.75); 
+  color: white;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 2px 3px 15px #888888;
+}
+#tutorials {
+  opacity: .7;
+}
+@media only screen and (min-width: 376px) {
+  body {
+    grid-template-areas:
+    " . . . . " 
+    " . community community . " 
+    " . subscription benefits . " 
+    " . footer footer . ";
+    grid-template-rows: 160px 215px 275px 160px;
+    grid-template-columns: 1fr 320px 320px 1fr;
+  }
+  body > div {
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media only screen and (min-width: 376px) {
+  #subscription {
+    border-radius: 0px 0px 0px 5px;
+    box-shadow: -2px 3px 15px #888888;
+  }
+}
+@media only screen and (min-width: 376px) {
+  #benefits {
+    border-radius: 0px 0px 5px 0px;
+    box-shadow: 2px 3px 15px #888888;
+  }
+}
+footer {
+  grid-area: footer;
+}
+button {
+  padding: 10px;
+  border: none;
+  background-color: brightyellow;
+  background-color: hsl(71, 73%, 54%);
+  color: hsl(218, 22%, 67%);
+  color: white;
+  border-radius:  5px;
+  box-shadow:3px 3px 10px #888888;
+}
+button:hover {
+  transition: transform 1s ease;
+  transform: translateY(-1.9px) translateX(1.5px);
+  color: #757575;
+  box-shadow: 3px 3px 10px whitesmoke;
+}
+.btn {
+  display: flex;
+  flex-direction: column;
+}
