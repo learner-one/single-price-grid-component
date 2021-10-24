@@ -32,6 +32,7 @@ body > div {
 }
 #gain {
   opacity: .8;
+  font-size: 12px;
 }
 #subscription {
   grid-area:  subscription;
