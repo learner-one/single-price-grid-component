@@ -16,7 +16,7 @@ body {
     " . subscription . " 29%
     " . benefits . " 29%
     " . footer . " 1fr
-    /1fr 88% 1fr;
+    /1fr 90% 1fr;
 }
 body > div {
   padding-top: 10px;
@@ -32,7 +32,7 @@ body > div {
 }
 #gain {
   opacity: .8;
-  font-size: 10px;
+  font-size: 16px;
 }
 #subscription {
   grid-area:  subscription;
