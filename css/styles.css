@@ -20,8 +20,8 @@ body {
 }
 body > div {
   padding-top: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
   padding-bottom: 35px;
 }
 #community {
@@ -65,7 +65,7 @@ body > div {
     " . community community . " 
     " . subscription benefits . " 
     " . footer footer . ";
-    grid-template-rows: 20% 220px 275px 20%;
+    grid-template-rows: 1fr 220px 275px 1fr;
     grid-template-columns: 1fr 320px 320px 1fr;
   }
   body > div {
