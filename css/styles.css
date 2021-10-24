@@ -16,7 +16,7 @@ body {
     " . subscription . " 29%
     " . benefits . " 29%
     " . footer . " 1fr
-    /1fr 84% 1fr;
+    /1fr 315px 1fr;
 }
 body > div {
   padding-top: 10px;
@@ -58,7 +58,7 @@ body > div {
 #tutorials {
   opacity: .7;
 }
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 376px) and (-webkit-min-device-pixel-ratio: 2) {
   body {
     grid-template-areas:
     " . . . . " 
