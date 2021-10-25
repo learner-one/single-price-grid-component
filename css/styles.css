@@ -16,7 +16,7 @@ body {
     " . subscription . " 29%
     " . benefits . " 29%
     " . footer . " 1fr
-    /1fr 90% 1fr;
+    /1fr 315px 1fr;
 }
 body > div {
   padding-top: 10px;
@@ -32,7 +32,6 @@ body > div {
 }
 #gain {
   opacity: .8;
-  font-size: 16px;
 }
 #subscription {
   grid-area:  subscription;
@@ -66,7 +65,7 @@ body > div {
     " . community community . " 
     " . subscription benefits . " 
     " . footer footer . ";
-    grid-template-rows: 1fr 215px 275px 1fr;
+    grid-template-rows: 20% 215px 275px 20%;
     grid-template-columns: 1fr 320px 320px 1fr;
   }
   body > div {
